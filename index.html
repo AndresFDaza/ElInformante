@@ -7,7 +7,8 @@
       name="description"
       content="El Informante, todas las noticias de la region"
     />
-    <title>El Informante</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.png" />
+    <title>EL INFORMANTE</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -19,110 +20,200 @@
   <body>
     <header>
       <div class="header__top">
-        <div class="header__logo-Elinformante caja-inline-block">
-          El Informante
-        </div>
-        <p class="caja-inline-block">Noviembre 8, domingo</p>
-        <div class="caja-inline-block">
+        <div class="header__top-logo-elinformante">EL INFORMANTE</div>
+        <p class="header__top-date">Noviembre 8, domingo</p>
+        <div class="header__top-redes">
           <a class="header__link-redes" href="">
             <img
-              class="a__icon-container"
+              class="header__redes-icon"
               src="assets/icons/facebook.svg"
               alt="Facebook icon"
             />
           </a>
           <a class="header__link-redes" href="">
             <img
-              class="a__icon-container"
+              class="header__redes-icon"
               src="assets/icons/twitter.svg"
               alt="Twitter icon"
             />
           </a>
           <a class="header__link-redes" href="">
             <img
-              class="a__icon-container"
+              class="header__redes-icon"
               src="assets/icons/instagram.svg"
               alt="Instagram icon"
             />
           </a>
         </div>
-        <div class="caja-inline-block">
-          <img class="div__search-icon" src="assets/icons/lupa.svg" alt="" />
-          <input class="div__search-input" type="text" />
+        <div class="header__top-search">
+          <img class="header__serch-icon" src="assets/icons/lupa.svg" alt="" />
+          <input
+            class="header__search-input"
+            type="text"
+            placeholder="Buscar noticia..."
+          />
+        </div>
+        <div class="header__top-new-article">
+          <img
+            class="header__create-icon"
+            src="assets/icons/mas.svg"
+            alt="icono de crear"
+          />
+          <p>Nueva publicacion</p>
+        </div>
+        <div class="header__top-user">
+          <img
+            class="header__notification-icon"
+            src="assets/icons/campana.svg"
+            alt=""
+          />
+          <img
+            class="header__user-icon"
+            src="assets/icons/usuario.svg"
+            alt=""
+          />
         </div>
       </div>
 
       <div class="header__bottom">
-        <ul>
-          <li class="header__list caja-inline-block">Economia</li>
-          <li class="header__list caja-inline-block">Opinion</li>
-          <li class="header__list caja-inline-block">Tecnologia</li>
-          <li class="header__list caja-inline-block">Cultura</li>
-          <li class="header__list caja-inline-block">Entretenimiento</li>
-          <li class="header__list caja-inline-block">Deportes</li>
-          <li class="header__list caja-inline-block">Internacional</li>
-          <li class="header__list caja-inline-block">Politica</li>
+        <ul class="header__list">
+          <li class="header__list-item">Economia</li>
+          <li class="header__list-item">Opinion</li>
+          <li class="header__list-item">Tecnologia</li>
+          <li class="header__list-item">Cultura</li>
+          <li class="header__list-item">Entretenimiento</li>
+          <li class="header__list-item">Deportes</li>
+          <li class="header__list-item">Internacional</li>
+          <li class="header__list-item">Politica</li>
         </ul>
       </div>
     </header>
 
     <main>
       <article>
-        <span>Categoria</span>
-        <span>10/10/10</span>
-        <h1>ESTA ES UNA NOTICIA DESTACADA</h1>
-        <img src="assets/img/trump_vs_bidem.png" alt="noticia principal" />
+        <span class="main__category">Politica</span>
+        <span class="main__date">7 de Noviembre 2020</span>
+        <h1 class="main__tittle">Elecciones Estados Unidos: Trump VS Biden</h1>
+        <img
+          class="main__image"
+          src="assets/img/trump_vs_bidem.png"
+          alt="noticia principal"
+        />
       </article>
     </main>
 
     <section>
-      <h2>Ultimas noticias</h2>
+      <h2 class="section__title">Ultimas noticias</h2>
+      <span class="section__division"></span>
       <div>
-        <article>un articulo</article>
-        <article>un articulo</article>
-        <article>un articulo</article>
-        <article>un articulo</article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Esta es una noticia increible, mira esto
+          </h3>
+          <p class="article__intro-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
+            at quibusdam libero illo repellendus incidunt impedit modi delectus
+            distinctio. Amet?
+          </p>
+          <div class="article__button--light">Leer más</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Esta es una noticia increible, mira esto
+          </h3>
+          <p class="article__intro-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
+            at quibusdam libero illo repellendus incidunt impedit modi delectus
+            distinctio. Amet?
+          </p>
+          <div class="article__button--light">Leer más</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Esta es una noticia increible, mira esto
+          </h3>
+          <p class="article__intro-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
+            at quibusdam libero illo repellendus incidunt impedit modi delectus
+            distinctio. Amet?
+          </p>
+          <div class="article__button--light">Leer más</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Esta es una noticia increible, mira esto
+          </h3>
+          <p class="article__intro-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
+            at quibusdam libero illo repellendus incidunt impedit modi delectus
+            distinctio. Amet?
+          </p>
+          <div class="article__button--light">Leer más</div>
+        </article>
       </div>
     </section>
 
+    <section>
+      <h3 class="section__title">No te lo pierdas</h3>
+      <span class="section__division"></span>
+      <article class="article__interesting-news">
+        <h3 class="article__title--principal-color">
+          Esta es una noticia increible, mira esto
+        </h3>
+        <p class="article__intro-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+          nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id at
+          quibusdam libero illo repellendus incidunt impedit modi delectus
+          distinctio. Amet?
+        </p>
+        <div class="article__button--principal-color">Leer más</div>
+      </article>
+    </section>
+
     <footer>
-      <div class="header__bottom">
-        <ul>
-          <li class="header__list caja-inline-block">AYUDA</li>
-          <li class="header__list caja-inline-block">SUGERENCIAS</li>
-          <li class="header__list caja-inline-block">EL INFORMANTE</li>
-          <li class="header__list caja-inline-block">CONTANCTENOS</li>
-          <li class="header__list caja-inline-block">TRABAJA CON NOSOTROS</li>
-        </ul>
-      </div>
-      <div class="caja-inline-block">
-        <a class="header__link-redes" href="">
+      <div class="footer__logo-elinformante">EL INFORMANTE</div>
+      <div class="footer__redes">
+        <a class="footer__link-redes" href="">
           <img
-            class="a__icon-container"
+            class="footer_redes-icon"
             src="assets/icons/facebook.svg"
             alt="Facebook icon"
           />
         </a>
-        <a class="header__link-redes" href="">
+        <a class="footer__link-redes" href="">
           <img
-            class="a__icon-container"
+            class="footer_redes-icon"
             src="assets/icons/twitter.svg"
             alt="Twitter icon"
           />
         </a>
-        <a class="header__link-redes" href="">
+        <a class="footer__link-redes" href="">
           <img
-            class="a__icon-container"
+            class="footer_redes-icon"
             src="assets/icons/instagram.svg"
             alt="Instagram icon"
           />
         </a>
       </div>
-      <p>
-        Prohibida su reproducción total o parcial, así como su traducción a
-        cualquier idioma sin autorización escrita de su titular.
-        ELINFORMANTE.com todas las noticias principales de Colombia y el Mundo
-      </p>
+      <div class="footer__unordened-list">
+        <ul>
+          <li class="footer__list-item">AYUDA</li>
+          <li class="footer__list-item">SUGERENCIAS</li>
+          <li class="footer__list-item">CONTANCTENOS</li>
+          <li class="footer__list-item">TRABAJA CON NOSOTROS</li>
+        </ul>
+      </div>
+      <div>
+        <p>
+          Prohibida su reproducción total o parcial, así como su traducción a
+          cualquier idioma sin autorización escrita de su titular.
+          ELINFORMANTE.com todas las noticias principales de Colombia y el Mundo
+        </p>
+      </div>
     </footer>
   </body>
 </html>
