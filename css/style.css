@@ -1,0 +1,80 @@
+:root {
+  --color-blue: #4a78a0;
+  --color-orange: #ff6c1a;
+  --color-white: #faf7f7;
+  --color-black: #000000;
+
+  --title-font: "Roboto", sans-serif;
+  --text-font: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--title-font);
+  font-size: 2rem;
+}
+
+/*  empieza estilos */
+
+header {
+  margin-bottom: 1em;
+}
+
+main {
+  background: yellowgreen;
+}
+
+section {
+  background: violet;
+}
+
+footer {
+  background-color: cadetblue;
+}
+
+.header__top {
+  background-color: white;
+}
+
+.header__bottom {
+  background-color: var(--color-blue);
+}
+
+.caja-inline-block {
+  display: inline-block;
+}
+
+.header__logo-Elinformante {
+  color: var(--color-blue);
+  font-size: 2em;
+}
+
+.header__link-redes {
+  text-decoration: none;
+}
+
+.a__icon-container {
+  width: 50px;
+}
+
+.div__search-icon {
+  width: 25px;
+}
+
+.div__search-input {
+  height: 20px;
+}
+
+.header__list {
+  font-size: 0.8em;
+  color: var(--color-white);
+  padding: 0.5em 0.5em;
+}
+
+/*   main   */
