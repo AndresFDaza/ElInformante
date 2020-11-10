@@ -17,13 +17,250 @@
 html {
   font-size: 62.5%;
   font-family: var(--title-font);
-  font-size: 2rem;
+}
+
+.wrapper {
+  padding: 3em 5rem;
 }
 
 /*  Header  */
 
+a {
+  text-decoration: none;
+}
+
+.header__top {
+  display: flex;
+  background-color: var(--color-white);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__top-logo-elinformante {
+  font-size: 3em;
+  color: var(--color-blue);
+  padding: 0.5em;
+}
+
+.header__top-date {
+  padding: 1em;
+}
+
+.header__redes-icon {
+  width: 25px;
+}
+
+.header__top-search {
+  background-color: var(--color-blue);
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.header__search-icon {
+  width: 18px;
+}
+
+.header__top-new-article {
+  padding: 1em;
+  text-align: center;
+  background-color: var(--color-orange);
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.header__create-icon {
+  width: 25px;
+}
+
+.header__top-user {
+  width: 40px;
+  display: flex;
+}
+
+.header__notification-icon {
+  width: 25px;
+}
+
+.header__user-icon {
+  width: 40px;
+}
+
+.header__bottom {
+  background-color: var(--color-blue);
+}
+
+.header__list {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.header__list-item {
+  border-right: gray;
+  flex-grow: 1;
+}
+
+.header__list-link {
+  display: block;
+  padding: 0.5em 1em;
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1.4em;
+}
+
 /*   Main   */
 
+.main__category {
+  color: var(--color-white);
+  font-size: 1m;
+  background-color: var(--color-blue);
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.main__title {
+  font-size: 4em;
+  padding: 0.5em;
+  position: absolute;
+  font-weight: bold;
+}
+
+.main__image {
+  width: 100%;
+}
 /* Latest news */
 
+.section__title {
+  font-size: 3em;
+  padding: 0.6em;
+  color: var(--color-blue);
+  display: inline-block;
+}
+
+.section__division {
+  display: inline-block;
+  height: 2em;
+  width: ;
+  background-color: var(--color-blue);
+  padding: 0.6em;
+}
+
+.article__latest-news {
+  display: inline-block;
+  padding: 2em;
+  background-color: var(--color-white);
+  margin-bottom: 1em;
+  border-radius: 1em;
+  max-width: 40%;
+}
+
+.article__title--dark {
+  color: var(--color-black);
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.article__intro-paragraph {
+  font-family: var(--text-font);
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.article__button--light {
+  padding: 0.4em 0.4em;
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  border-radius: 1em;
+  float: right;
+}
+
 /* Interesting news */
+
+.article__interesting-news {
+  display: inline-block;
+  padding: 2em;
+  background-color: var(--color-white);
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+
+.article__interesting-image--left {
+  width: 40%;
+  position: relative;
+  border-radius: 1em;
+  float: left;
+}
+
+.article__interesting-image--right {
+  width: 40%;
+  position: relative;
+  border-radius: 1em;
+  float: right;
+}
+
+.article__title--principal-color {
+  color: var(--color-blue);
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.article__intro-paragraph {
+  font-family: var(--text-font);
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.article__button--principal-color {
+  padding: 0.4em 0.4em;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  border-radius: 1em;
+  float: right;
+}
+
+/*   Footer   */
+
+.footer__horizontal-container {
+  background-color: var(--color-blue);
+  display: flex;
+  padding: 1em;
+}
+
+.footer__logo-elinformante {
+  color: var(--color-white);
+  font-size: 2em;
+  padding: 1em;
+}
+
+.footer__redes {
+  padding: 1em;
+}
+
+.footer__redes-icon {
+  width: 35px;
+}
+
+.footer__list-container {
+  padding: 1em;
+}
+
+.footer__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer__list-item {
+  color: var(--color-white);
+  padding: 0.5em;
+}
+
+.footer__information {
+  background-color: var(--color-blue);
+  padding: 0 2em 2em 2em;
+  text-align: center;
+  font-size: 1em;
+}

@@ -46,11 +46,11 @@
           </a>
         </div>
         <div class="header__top-search">
-          <img class="header__serch-icon" src="assets/icons/lupa.svg" alt="" />
+          <img class="header__search-icon" src="assets/icons/lupa.svg" alt="" />
           <input
             class="header__search-input"
             type="text"
-            placeholder="Buscar noticia..."
+            placeholder=" Buscar noticia..."
           />
         </div>
         <div class="header__top-new-article">
@@ -75,139 +75,189 @@
         </div>
       </div>
 
-      <div class="header__bottom">
+      <nav class="header__bottom">
         <ul class="header__list">
-          <li class="header__list-item">Economia</li>
-          <li class="header__list-item">Opinion</li>
-          <li class="header__list-item">Tecnologia</li>
-          <li class="header__list-item">Cultura</li>
-          <li class="header__list-item">Entretenimiento</li>
-          <li class="header__list-item">Deportes</li>
-          <li class="header__list-item">Internacional</li>
-          <li class="header__list-item">Politica</li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Economia</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Opinion</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Tecnologia</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Cultura</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Entretenimiento</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Deportes</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Internacional</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Politica</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Educacion</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="">Salud</a>
+          </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
-    <main>
-      <article>
-        <span class="main__category">Politica</span>
-        <span class="main__date">7 de Noviembre 2020</span>
-        <h1 class="main__tittle">Elecciones Estados Unidos: Trump VS Biden</h1>
-        <img
-          class="main__image"
-          src="assets/img/trump_vs_bidem.png"
-          alt="noticia principal"
-        />
-      </article>
-    </main>
+    <div class="wrapper">
+      <main>
+        <article>
+          <span class="main__category">Politica</span>
+          <span class="main__date">7 de Noviembre 2020</span>
+          <h1 class="main__title">Elecciones Estados Unidos: Trump VS Biden</h1>
+          <img
+            class="main__image"
+            src="assets/img/trump_vs_bidem.png"
+            alt="noticia principal"
+          />
+        </article>
+      </main>
 
-    <section>
-      <h2 class="section__title">Ultimas noticias</h2>
-      <span class="section__division"></span>
-      <div>
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            Esta es una noticia increible, mira esto
-          </h3>
-          <p class="article__intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
-            at quibusdam libero illo repellendus incidunt impedit modi delectus
-            distinctio. Amet?
-          </p>
-          <div class="article__button--light">Leer más</div>
-        </article>
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            Esta es una noticia increible, mira esto
-          </h3>
-          <p class="article__intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
-            at quibusdam libero illo repellendus incidunt impedit modi delectus
-            distinctio. Amet?
-          </p>
-          <div class="article__button--light">Leer más</div>
-        </article>
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            Esta es una noticia increible, mira esto
-          </h3>
-          <p class="article__intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
-            at quibusdam libero illo repellendus incidunt impedit modi delectus
-            distinctio. Amet?
-          </p>
-          <div class="article__button--light">Leer más</div>
-        </article>
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            Esta es una noticia increible, mira esto
-          </h3>
-          <p class="article__intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
-            at quibusdam libero illo repellendus incidunt impedit modi delectus
-            distinctio. Amet?
-          </p>
-          <div class="article__button--light">Leer más</div>
-        </article>
-      </div>
-    </section>
+      <section class="section__latest-news">
+        <h2 class="section__title">Últimas noticias</h2>
+        <div class="section__division"></div>
+        <div>
+          <article class="article__latest-news">
+            <h3 class="article__title--dark">
+              Esta es una noticia increible, mira esto
+            </h3>
+            <p class="article__intro-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
+              rem iusto id at quibusdam libero illo repellendus incidunt impedit
+              modi delectus distinctio. Amet?
+            </p>
+            <div class="article__button--light">LEER MÁS</div>
+          </article>
+          <article class="article__latest-news">
+            <h3 class="article__title--dark">
+              Esta es una noticia increible, mira esto
+            </h3>
+            <p class="article__intro-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
+              rem iusto id at quibusdam libero illo repellendus incidunt impedit
+              modi delectus distinctio. Amet?
+            </p>
+            <div class="article__button--light">LEER MÁS</div>
+          </article>
+          <article class="article__latest-news">
+            <h3 class="article__title--dark">
+              Esta es una noticia increible, mira esto
+            </h3>
+            <p class="article__intro-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
+              rem iusto id at quibusdam libero illo repellendus incidunt impedit
+              modi delectus distinctio. Amet?
+            </p>
+            <div class="article__button--light">LEER MÁS</div>
+          </article>
+          <article class="article__latest-news">
+            <h3 class="article__title--dark">
+              Esta es una noticia increible, mira esto
+            </h3>
+            <p class="article__intro-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
+              rem iusto id at quibusdam libero illo repellendus incidunt impedit
+              modi delectus distinctio. Amet?
+            </p>
+            <div class="article__button--light">LEER MÁS</div>
+          </article>
+        </div>
+      </section>
 
-    <section>
-      <h3 class="section__title">No te lo pierdas</h3>
-      <span class="section__division"></span>
-      <article class="article__interesting-news">
-        <h3 class="article__title--principal-color">
-          Esta es una noticia increible, mira esto
-        </h3>
-        <p class="article__intro-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-          nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id at
-          quibusdam libero illo repellendus incidunt impedit modi delectus
-          distinctio. Amet?
-        </p>
-        <div class="article__button--principal-color">Leer más</div>
-      </article>
-    </section>
+      <section>
+        <h3 class="section__title">No te lo pierdas</h3>
+        <div class="section__division"></div>
+        <article class="article__interesting-news">
+          <img
+            class="article__interesting-image--left"
+            src="assets/img/primax colombianos.jpeg"
+            alt=""
+          />
+          <h3 class="article__title--principal-color">
+            Esta es una noticia increible, mira esto
+          </h3>
+          <p class="article__intro-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
+            at quibusdam libero illo repellendus incidunt impedit modi delectus
+            distinctio. Amet?
+          </p>
+          <div class="article__button--principal-color">Leer más</div>
+        </article>
+
+        <article class="article__interesting-news">
+          <img
+            class="article__interesting-image--right"
+            src="assets/img/camila sosa.jpg"
+            alt=""
+          />
+          <h3 class="article__title--principal-color">
+            Esta es una noticia increible, mira esto
+          </h3>
+          <p class="article__intro-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
+            at quibusdam libero illo repellendus incidunt impedit modi delectus
+            distinctio. Amet?
+          </p>
+          <div class="article__button--principal-color">Leer más</div>
+        </article>
+      </section>
+    </div>
 
     <footer>
-      <div class="footer__logo-elinformante">EL INFORMANTE</div>
-      <div class="footer__redes">
-        <a class="footer__link-redes" href="">
-          <img
-            class="footer_redes-icon"
-            src="assets/icons/facebook.svg"
-            alt="Facebook icon"
-          />
-        </a>
-        <a class="footer__link-redes" href="">
-          <img
-            class="footer_redes-icon"
-            src="assets/icons/twitter.svg"
-            alt="Twitter icon"
-          />
-        </a>
-        <a class="footer__link-redes" href="">
-          <img
-            class="footer_redes-icon"
-            src="assets/icons/instagram.svg"
-            alt="Instagram icon"
-          />
-        </a>
+      <div class="footer__horizontal-container">
+        <div class="footer__logo-elinformante">EL INFORMANTE</div>
+        <div class="footer__redes">
+          <a class="footer__link-redes" href="">
+            <img
+              class="footer__redes-icon"
+              src="assets/icons/facebook.svg"
+              alt="Facebook icon"
+            />
+          </a>
+          <a class="footer__link-redes" href="">
+            <img
+              class="footer__redes-icon"
+              src="assets/icons/twitter.svg"
+              alt="Twitter icon"
+            />
+          </a>
+          <a class="footer__link-redes" href="">
+            <img
+              class="footer__redes-icon"
+              src="assets/icons/instagram.svg"
+              alt="Instagram icon"
+            />
+          </a>
+        </div>
+        <div class="footer__list-container">
+          <ul class="footer__list">
+            <li class="footer__list-item">AYUDA</li>
+            <li class="footer__list-item">SUGERENCIAS</li>
+            <li class="footer__list-item">CONOCENOS</li>
+            <li class="footer__list-item">TRABAJA CON NOSOTROS</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__unordened-list">
-        <ul>
-          <li class="footer__list-item">AYUDA</li>
-          <li class="footer__list-item">SUGERENCIAS</li>
-          <li class="footer__list-item">CONTANCTENOS</li>
-          <li class="footer__list-item">TRABAJA CON NOSOTROS</li>
-        </ul>
-      </div>
-      <div>
+
+      <div class="footer__information">
         <p>
           Prohibida su reproducción total o parcial, así como su traducción a
           cualquier idioma sin autorización escrita de su titular.
