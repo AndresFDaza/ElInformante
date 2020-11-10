@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/resset.css" />
+    <!-- <link rel="stylesheet" href="css/resset.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -53,7 +53,7 @@
             placeholder=" Buscar noticia..."
           />
         </div>
-        <div class="header__top-new-article">
+        <div id="CreateArticleButton" class="header__top-new-article">
           <img
             class="header__create-icon"
             src="assets/icons/mas.svg"
@@ -265,5 +265,88 @@
         </p>
       </div>
     </footer>
+
+    <!-- Modal Create -->
+
+    <div id="ModalCreate" class="modal">
+      <div class="modal__content">
+        <h4>Escribir Articulo</h4>
+        <input
+          class="modal__create-title-input"
+          type="text"
+          placeholder=" Titulo del Articulo..."
+        />
+        <textarea
+          class="modal__create-intro-input"
+          type="text"
+          maxlength="200"
+          data-length="200"
+          placeholder=" Inserte la introduccion del articulo"
+        ></textarea>
+        <textarea
+          class="modal__create-text-input"
+          type="text"
+          maxlength="200"
+          data-length="200"
+          placeholder=" Inserte el texto del articulo"
+        ></textarea>
+        <legend>Imagen</legend>
+        <input
+          class="uploadBtn"
+          type="file"
+          value="upload"
+          id="btnUploadFileImage"
+        />
+
+        <!-- <input
+          class="modal__create-image-input"
+          type="text"
+          placeholder=" Archivo no seleccionado..."
+        /> -->
+        <legend>Video</legend>
+        <input
+          class="uploadBtn"
+          type="file"
+          value="upload"
+          id="btnUploadFileVideo"
+        />
+
+        <!-- <input
+          class="modal__create-video-input"
+          type="text"
+          placeholder=" Archivo no seleccionado..."
+        /> -->
+        <legend>Sección</legend>
+        <label for="Section">Seccion de publicacion</label>
+        <select name="Section">
+          <optgroup label="Publicar en">
+            <option value="1">Ultimas noticias</option>
+            <option value="Hi">Portada</option>
+            <option>No te lo pierdas</option>
+          </optgroup>
+        </select>
+        <legend>Etiquetas</legend>
+        <label for="category">Seleccione una etiqueta</label>
+        <select name="category" id="Category">
+          <optgroup label="etiqueta">
+            <option value="1">Educacion</option>
+            <option value="Hi">Economia</option>
+            <option value="">Opinion</option>
+            <option value="">Tecnologia</option>
+            <option value="">Cultura</option>
+            <option value="">Entretenimiento</option>
+            <option value="">Deportes</option>
+            <option value="">Internacional</option>
+            <option value="">Politica</option>
+            <option value="">Salud</option>
+          </optgroup>
+        </select>
+        <button class="modal__create-publicar-button" type="submit">
+          Publicar articulo
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

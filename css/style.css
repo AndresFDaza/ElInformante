@@ -132,16 +132,18 @@ a {
 /* Latest news */
 
 .section__title {
-  font-size: 3em;
-  padding: 0.6em;
+  display: block;
+  font-size: 4em;
   color: var(--color-blue);
   display: inline-block;
+  margin: 1em 0;
+  padding-right: 1em;
 }
 
 .section__division {
   display: inline-block;
   height: 2em;
-  width: ;
+  width: 500px;
   background-color: var(--color-blue);
   padding: 0.6em;
 }
@@ -263,4 +265,82 @@ a {
   padding: 0 2em 2em 2em;
   text-align: center;
   font-size: 1em;
+}
+
+/* Modal Create */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+}
+
+.modal__content {
+  background-color: var(--color-white);
+  width: 50vw;
+  padding: 3rem;
+  border: 1px solid darkgray;
+}
+
+.modal--mostrar {
+  transform: scale(1);
+}
+
+.modal__content > h4 {
+  font-size: 2em;
+}
+
+.modal__create-title-input {
+  display: block;
+  height: 3em;
+  width: 100%;
+  margin-bottom: 0.5em;
+  border: 2px solid;
+  border-color: var(--color-blue) var(--color-blue);
+}
+
+.modal__create-intro-input {
+  display: block;
+  margin-bottom: 0.5em;
+  border: 2px solid;
+  width: 100%;
+  border-color: var(--color-blue) var(--color-blue);
+}
+
+.modal__create-text-input {
+  display: block;
+  margin-bottom: 0.5em;
+  border: 2px solid;
+  width: 100%;
+  height: 100px;
+  border-color: var(--color-blue) var(--color-blue);
+}
+
+.uploadBtn {
+  margin-bottom: 0.5em;
+}
+
+.modal__create-publicar-button {
+  display: block;
+  padding: 1em;
+  background-color: orange;
+  border: 2px solid var(--color-orange);
+  margin: 0 auto;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+legend {
+  font-size: 1.5em;
+  color: var(--color-blue);
+}
+
+select {
+  margin-bottom: 0.5em;
 }
