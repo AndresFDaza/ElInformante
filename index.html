@@ -272,81 +272,78 @@
       <div class="modal__content">
         <h4>Escribir Articulo</h4>
         <input
+          id="Modal__create-title-input"
           class="modal__create-title-input"
           type="text"
           placeholder=" Titulo del Articulo..."
         />
-        <textarea
+        <input
+          id="Modal__create-intro-input"
           class="modal__create-intro-input"
           type="text"
-          maxlength="200"
-          data-length="200"
           placeholder=" Inserte la introduccion del articulo"
-        ></textarea>
-        <textarea
+        ></input>
+        <input
+          id="Modal__create-text-input"
           class="modal__create-text-input"
           type="text"
-          maxlength="200"
-          data-length="200"
           placeholder=" Inserte el texto del articulo"
-        ></textarea>
+        ></input>
         <legend>Imagen</legend>
-        <input
-          class="uploadBtn"
-          type="file"
-          value="upload"
-          id="btnUploadFileImage"
-        />
-
-        <!-- <input
-          class="modal__create-image-input"
-          type="text"
-          placeholder=" Archivo no seleccionado..."
-        /> -->
+        <input id="UploadImage" class="uploadBtn" type="file" value="upload" />
         <legend>Video</legend>
+        <p class="modal__create-link-video">Inserte el link del video:</p>
         <input
-          class="uploadBtn"
-          type="file"
-          value="upload"
-          id="btnUploadFileVideo"
+          class="linkVideo"
+          type="text"
+          id="linkVideoArticle"
+          placeholder=" Link del video..."
         />
 
-        <!-- <input
-          class="modal__create-video-input"
-          type="text"
-          placeholder=" Archivo no seleccionado..."
-        /> -->
         <legend>Sección</legend>
         <label for="Section">Seccion de publicacion</label>
-        <select name="Section">
+        <select id="Modal__create-select-section" name="Section">
           <optgroup label="Publicar en">
-            <option value="1">Ultimas noticias</option>
-            <option value="Hi">Portada</option>
-            <option>No te lo pierdas</option>
+            <option value="latest-news">Ultimas noticias</option>
+            <option value="main">Portada</option>
+            <option value="interesting">No te lo pierdas</option>
           </optgroup>
         </select>
+
         <legend>Etiquetas</legend>
         <label for="category">Seleccione una etiqueta</label>
-        <select name="category" id="Category">
+        <select id="Modal__create-select-category" name="category">
           <optgroup label="etiqueta">
-            <option value="1">Educacion</option>
-            <option value="Hi">Economia</option>
-            <option value="">Opinion</option>
-            <option value="">Tecnologia</option>
-            <option value="">Cultura</option>
-            <option value="">Entretenimiento</option>
-            <option value="">Deportes</option>
-            <option value="">Internacional</option>
-            <option value="">Politica</option>
-            <option value="">Salud</option>
+            <option value="educacion">Educacion</option>
+            <option value="economia">Economia</option>
+            <option value="opinion">Opinion</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="cultura">Cultura</option>
+            <option value="entretenimiento">Entretenimiento</option>
+            <option value="deportes">Deportes</option>
+            <option value="internacional">Internacional</option>
+            <option value="politica">Politica</option>
+            <option value="salud">Salud</option>
           </optgroup>
         </select>
-        <button class="modal__create-publicar-button" type="submit">
-          Publicar articulo
-        </button>
+        <div id="Modal__create-publicar-button" class="modal__create-publicar-button">
+          Publicar Articulo
+        </div>
       </div>
     </div>
-
-    <script src="js/script.js"></script>
   </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+  <!-- JS main files -->
+  <script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
+  <script type="text/javascript" src="js/article/article.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/article/articleController.js"></script>
 </html>

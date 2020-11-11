@@ -113,7 +113,7 @@ a {
 
 .main__category {
   color: var(--color-white);
-  font-size: 1m;
+  font-size: 1.2em;
   background-color: var(--color-blue);
   border-radius: 1em;
   padding: 0.5em;
@@ -326,11 +326,16 @@ a {
   margin-bottom: 0.5em;
 }
 
+.modal__create-link-video {
+  display: inline;
+  margin-bottom: 1em;
+}
+
 .modal__create-publicar-button {
-  display: block;
+  /* display: inline-block; */
   padding: 1em;
-  background-color: orange;
-  border: 2px solid var(--color-orange);
+  background-color: var(--color-orange);
+  border: 2px solid orangered;
   margin: 0 auto;
   margin-top: 1em;
   cursor: pointer;
