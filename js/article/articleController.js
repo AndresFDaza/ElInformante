@@ -41,7 +41,7 @@ $(() => {
         category
       )
       .then(() => {
-        console.log("El artiiculo se ha creado exitosamente!!");
+        console.log("El articulo se ha creado exitosamente!!");
         vistaModal.classList.remove("modal--mostrar");
       })
       .catch((err) => {

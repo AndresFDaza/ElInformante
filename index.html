@@ -1,81 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="El Informante, todas las noticias de la region"
-    />
-    <link rel="shortcut icon" href="assets/icons/favicon.png" />
-    <title>EL INFORMANTE</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="css/resset.css" /> -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="header__top">
-        <div class="header__top-logo-elinformante">EL INFORMANTE</div>
-        <p class="header__top-date">Noviembre 8, domingo</p>
-        <div class="header__top-redes">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="El Informante, todas las noticias de la region" />
+  <link rel="shortcut icon" href="assets/icons/favicon.png" />
+  <title>EL INFORMANTE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="css/resset.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header__top">
+      <div class="wrapper-header-top">
+        <div class="header__top-logo-elinformante flex-center">EL INFORMANTE</div>
+        <div class="header__top-date flex-center">Noviembre 8, domingo</div>
+        <div class="header__top-redes flex-center">
           <a class="header__link-redes" href="">
-            <img
-              class="header__redes-icon"
-              src="assets/icons/facebook.svg"
-              alt="Facebook icon"
-            />
+            <img class="header__redes-icon" src="assets/icons/facebook.svg" alt="Facebook icon" />
           </a>
           <a class="header__link-redes" href="">
-            <img
-              class="header__redes-icon"
-              src="assets/icons/twitter.svg"
-              alt="Twitter icon"
-            />
+            <img class="header__redes-icon" src="assets/icons/twitter.svg" alt="Twitter icon" />
           </a>
           <a class="header__link-redes" href="">
-            <img
-              class="header__redes-icon"
-              src="assets/icons/instagram.svg"
-              alt="Instagram icon"
-            />
+            <img class="header__redes-icon" src="assets/icons/instagram.svg" alt="Instagram icon" />
           </a>
         </div>
-        <div class="header__top-search">
-          <img class="header__search-icon" src="assets/icons/lupa.svg" alt="" />
-          <input
-            class="header__search-input"
-            type="text"
-            placeholder=" Buscar noticia..."
-          />
+        <div class="header__top-search flex-center">
+          <div class="header__search-icon-container">
+            <img class="header__search-icon" src="assets/icons/lupa.svg" alt="" />
+          </div>
+          <input class="header__search-input" type="text" placeholder=" Buscar noticia..." />
         </div>
-        <div id="CreateArticleButton" class="header__top-new-article">
-          <img
-            class="header__create-icon"
-            src="assets/icons/mas.svg"
-            alt="icono de crear"
-          />
-          <p>Nueva publicacion</p>
+        <div id="CreateArticleButton" class="header__top-new-article  flex-center">
+          <img class="header__create-icon" src="assets/icons/mas.svg" alt="icono de crear" />
+          <p class="header__create-text">Crear publicación</p>
         </div>
-        <div class="header__top-user">
-          <img
-            class="header__notification-icon"
-            src="assets/icons/campana.svg"
-            alt=""
-          />
-          <img
-            class="header__user-icon"
-            src="assets/icons/usuario.svg"
-            alt=""
-          />
+        <div class="header__top-user flex-center">
+          <img class="header__notification-icon" src="assets/icons/campana.svg" alt="" />
+          <img class="header__user-icon" src="assets/icons/user.svg" alt="" />
         </div>
       </div>
+    </div>
 
-      <nav class="header__bottom">
+    <nav class="header__bottom">
+      <div class="wrapper-external-top">
         <ul class="header__list">
           <li class="header__list-item">
             <a class="header__list-link" href="">Economia</a>
@@ -108,242 +81,210 @@
             <a class="header__list-link" href="">Salud</a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <div class="wrapper">
-      <main>
-        <article>
+  <div class="wrapper-internal">
+    <main>
+      <article>
+        <div class="main__top">
           <span class="main__category">Politica</span>
           <span class="main__date">7 de Noviembre 2020</span>
-          <h1 class="main__title">Elecciones Estados Unidos: Trump VS Biden</h1>
-          <img
-            class="main__image"
-            src="assets/img/trump_vs_bidem.png"
-            alt="noticia principal"
-          />
-        </article>
-      </main>
-
-      <section class="section__latest-news">
-        <h2 class="section__title">Últimas noticias</h2>
-        <div class="section__division"></div>
-        <div>
-          <article class="article__latest-news">
-            <h3 class="article__title--dark">
-              Esta es una noticia increible, mira esto
-            </h3>
-            <p class="article__intro-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
-              rem iusto id at quibusdam libero illo repellendus incidunt impedit
-              modi delectus distinctio. Amet?
-            </p>
-            <div class="article__button--light">LEER MÁS</div>
-          </article>
-          <article class="article__latest-news">
-            <h3 class="article__title--dark">
-              Esta es una noticia increible, mira esto
-            </h3>
-            <p class="article__intro-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
-              rem iusto id at quibusdam libero illo repellendus incidunt impedit
-              modi delectus distinctio. Amet?
-            </p>
-            <div class="article__button--light">LEER MÁS</div>
-          </article>
-          <article class="article__latest-news">
-            <h3 class="article__title--dark">
-              Esta es una noticia increible, mira esto
-            </h3>
-            <p class="article__intro-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
-              rem iusto id at quibusdam libero illo repellendus incidunt impedit
-              modi delectus distinctio. Amet?
-            </p>
-            <div class="article__button--light">LEER MÁS</div>
-          </article>
-          <article class="article__latest-news">
-            <h3 class="article__title--dark">
-              Esta es una noticia increible, mira esto
-            </h3>
-            <p class="article__intro-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio, nam. Mollitia dolores, ducimus iste, neque cupiditate
-              rem iusto id at quibusdam libero illo repellendus incidunt impedit
-              modi delectus distinctio. Amet?
-            </p>
-            <div class="article__button--light">LEER MÁS</div>
-          </article>
         </div>
-      </section>
 
-      <section>
-        <h3 class="section__title">No te lo pierdas</h3>
-        <div class="section__division"></div>
-        <article class="article__interesting-news">
-          <img
-            class="article__interesting-image--left"
-            src="assets/img/primax colombianos.jpeg"
-            alt=""
-          />
-          <h3 class="article__title--principal-color">
-            Esta es una noticia increible, mira esto
+        <h1 class="main__title">Elecciones Estados Unidos: Trump VS Biden</h1>
+        <img class="main__image" src="assets/img/trump_vs_bidem.png" alt="noticia principal" />
+      </article>
+    </main>
+
+    <section class="section__latest-news">
+      <h2 class="section__title">Últimas noticias</h2>
+      <div class="section__division"></div>
+      <div class="section__latest-news-container">
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            La historia de la brutal golpiza
+            al hijo de Sergio Araújo:
           </h3>
           <p class="article__intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
-            at quibusdam libero illo repellendus incidunt impedit modi delectus
-            distinctio. Amet?
+            Estuvo 25 días incapacitado y tiene deformidades físicas.
+            Los señalados acaban de ser condenados.
           </p>
-          <div class="article__button--principal-color">Leer más</div>
+          <div class="article__button--light">LEER MÁS</div>
         </article>
-
-        <article class="article__interesting-news">
-          <img
-            class="article__interesting-image--right"
-            src="assets/img/camila sosa.jpg"
-            alt=""
-          />
-          <h3 class="article__title--principal-color">
-            Esta es una noticia increible, mira esto
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            ‘¡La paz! Única pasión de Horacio
+            que supera la que tiene por Rosita’
           </h3>
           <p class="article__intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            nam. Mollitia dolores, ducimus iste, neque cupiditate rem iusto id
-            at quibusdam libero illo repellendus incidunt impedit modi delectus
-            distinctio. Amet?
-          </p>
-          <div class="article__button--principal-color">Leer más</div>
-        </article>
-      </section>
-    </div>
+            El discurso del expresidente Ernesto Samper en homenaje a
+            Horacio Serpa Uribe.
+            Palabras pronunciadas por el expresidente Ernesto Samper en
+            noviembre de 2018 en homenaje al exministro Serpa Uribe,
+            quien murió el sábado
 
-    <footer>
-      <div class="footer__horizontal-container">
-        <div class="footer__logo-elinformante">EL INFORMANTE</div>
-        <div class="footer__redes">
-          <a class="footer__link-redes" href="">
-            <img
-              class="footer__redes-icon"
-              src="assets/icons/facebook.svg"
-              alt="Facebook icon"
-            />
-          </a>
-          <a class="footer__link-redes" href="">
-            <img
-              class="footer__redes-icon"
-              src="assets/icons/twitter.svg"
-              alt="Twitter icon"
-            />
-          </a>
-          <a class="footer__link-redes" href="">
-            <img
-              class="footer__redes-icon"
-              src="assets/icons/instagram.svg"
-              alt="Instagram icon"
-            />
-          </a>
-        </div>
-        <div class="footer__list-container">
-          <ul class="footer__list">
-            <li class="footer__list-item">AYUDA</li>
-            <li class="footer__list-item">SUGERENCIAS</li>
-            <li class="footer__list-item">CONOCENOS</li>
-            <li class="footer__list-item">TRABAJA CON NOSOTROS</li>
-          </ul>
-        </div>
+          </p>
+          <div class="article__button--light">LEER MÁS</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Esto hace Back Tap, el 'botón secreto'
+            que Apple agregó a los iPhone
+          </h3>
+          <p class="article__intro-paragraph">
+            ¿Tienes un modelo de iPhone 8 o más nuevo?
+            ¿Ya te diste cuenta del "botón secreto" que le agrega
+            funcionalidad a la parte posterior del dispositivo?
+            No te preocupes si no, pues no es visible y hay
+            que configurarlo.
+
+          </p>
+          <div class="article__button--light">LEER MÁS</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Vladimir Marín sufre terrible accidente:
+            pide ayuda para cirugía
+          </h3>
+          <p class="article__intro-paragraph">
+            Un delicado accidente automovilístico sufrió el exfutbolista
+            colombiano Vladimir Marín, quien tras salvarse de milagro,
+            sufrió terribles heridas en su cara y cuello.
+          </p>
+          <div class="article__button--light">LEER MÁS</div>
+        </article>
       </div>
+    </section>
 
-      <div class="footer__information">
-        <p>
-          Prohibida su reproducción total o parcial, así como su traducción a
-          cualquier idioma sin autorización escrita de su titular.
-          ELINFORMANTE.com todas las noticias principales de Colombia y el Mundo
+    <section>
+      <h3 class="section__title">No te lo pierdas</h3>
+      <div class="section__division"></div>
+      <article class="article__interesting-news">
+        <img class="article__interesting-image--left" src="assets/img/primax colombianos.jpeg" alt="" />
+        <h3 class="article__title--principal-color">
+          Primax aporta al pago de la factura de energía de los colombianos
+        </h3>
+        <p class="article__intro-paragraph">
+          Según las cifras más recientes del Dane, la tasa de desempleo en agosto en el país se ubicó en 16,8 %, es
+          decir seis puntos porcentuales más alto frente al mismo periodo del año pasado. Sin lugar a dudas, una de las
+          responsables de esta elevada cifra es la crisis generada por el coronavirus.
         </p>
+        <div class="article__button--principal-color">Leer más</div>
+      </article>
+
+      <article class="article__interesting-news">
+        <img class="article__interesting-image--right" src="assets/img/camila sosa.jpg" alt="" />
+        <h3 class="article__title--principal-color">
+          'Me imagino travestis presidentas': Camila Sosa Villada
+        </h3>
+        <p class="article__intro-paragraph">
+          La destreza narrativa, la originalidad en el ambiente y us personajes llevaron a la escritora y actriz trans
+          argentina Camila Sosa Villada a ganar este lunes el premio Sor Juana Inés de la Cruz, de la Feria
+          Internacional del Libro de Guadalajara, por su novela "Las malas" (2019).
+
+        </p>
+        <div class="article__button--principal-color">Leer más</div>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer__horizontal-container">
+      <div class="footer__logo-elinformante">EL INFORMANTE</div>
+      <div class="footer__redes">
+        <a class="footer__link-redes" href="">
+          <img class="footer__redes-icon" src="assets/icons/facebook.svg" alt="Facebook icon" />
+        </a>
+        <a class="footer__link-redes" href="">
+          <img class="footer__redes-icon" src="assets/icons/twitter.svg" alt="Twitter icon" />
+        </a>
+        <a class="footer__link-redes" href="">
+          <img class="footer__redes-icon" src="assets/icons/instagram.svg" alt="Instagram icon" />
+        </a>
       </div>
-    </footer>
-
-    <!-- Modal Create -->
-
-    <div id="ModalCreate" class="modal">
-      <div class="modal__content">
-        <h4>Escribir Articulo</h4>
-        <input
-          id="Modal__create-title-input"
-          class="modal__create-title-input"
-          type="text"
-          placeholder=" Titulo del Articulo..."
-        />
-        <input
-          id="Modal__create-intro-input"
-          class="modal__create-intro-input"
-          type="text"
-          placeholder=" Inserte la introduccion del articulo"
-        ></input>
-        <input
-          id="Modal__create-text-input"
-          class="modal__create-text-input"
-          type="text"
-          placeholder=" Inserte el texto del articulo"
-        ></input>
-        <legend>Imagen</legend>
-        <input id="UploadImage" class="uploadBtn" type="file" value="upload" />
-        <legend>Video</legend>
-        <p class="modal__create-link-video">Inserte el link del video:</p>
-        <input
-          class="linkVideo"
-          type="text"
-          id="linkVideoArticle"
-          placeholder=" Link del video..."
-        />
-
-        <legend>Sección</legend>
-        <label for="Section">Seccion de publicacion</label>
-        <select id="Modal__create-select-section" name="Section">
-          <optgroup label="Publicar en">
-            <option value="latest-news">Ultimas noticias</option>
-            <option value="main">Portada</option>
-            <option value="interesting">No te lo pierdas</option>
-          </optgroup>
-        </select>
-
-        <legend>Etiquetas</legend>
-        <label for="category">Seleccione una etiqueta</label>
-        <select id="Modal__create-select-category" name="category">
-          <optgroup label="etiqueta">
-            <option value="educacion">Educacion</option>
-            <option value="economia">Economia</option>
-            <option value="opinion">Opinion</option>
-            <option value="tecnologia">Tecnologia</option>
-            <option value="cultura">Cultura</option>
-            <option value="entretenimiento">Entretenimiento</option>
-            <option value="deportes">Deportes</option>
-            <option value="internacional">Internacional</option>
-            <option value="politica">Politica</option>
-            <option value="salud">Salud</option>
-          </optgroup>
-        </select>
-        <div id="Modal__create-publicar-button" class="modal__create-publicar-button">
-          Publicar Articulo
-        </div>
+      <div class="footer__list-container">
+        <ul class="footer__list">
+          <li class="footer__list-item">AYUDA</li>
+          <li class="footer__list-item">SUGERENCIAS</li>
+          <li class="footer__list-item">CONOCENOS</li>
+          <li class="footer__list-item">TRABAJA CON NOSOTROS</li>
+        </ul>
       </div>
     </div>
-  </body>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="footer__information">
+      <p>
+        Prohibida su reproducción total o parcial, así como su traducción a
+        cualquier idioma sin autorización escrita de su titular.
+        ELINFORMANTE.com todas las noticias principales de Colombia y el Mundo
+      </p>
+    </div>
+  </footer>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <!-- Modal Create -->
 
-  <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+  <div id="ModalCreate" class="modal">
+    <div class="modal__content">
+      <h4>Escribir Articulo</h4>
+      <input id="Modal__create-title-input" class="modal__create-title-input" type="text"
+        placeholder=" Titulo del Articulo..." />
+      <input id="Modal__create-intro-input" class="modal__create-intro-input" type="text"
+        placeholder=" Inserte la introduccion del articulo"></input>
+      <input id="Modal__create-text-input" class="modal__create-text-input" type="text"
+        placeholder=" Inserte el texto del articulo"></input>
+      <legend>Imagen</legend>
+      <input id="UploadImage" class="uploadBtn" type="file" value="upload" />
+      <legend>Video</legend>
+      <p class="modal__create-link-video">Inserte el link del video:</p>
+      <input class="linkVideo" type="text" id="linkVideoArticle" placeholder=" Link del video..." />
 
-  <!-- JS main files -->
-  <script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
-  <script type="text/javascript" src="js/article/article.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/article/articleController.js"></script>
+      <legend>Sección</legend>
+      <label for="Section">Seccion de publicacion</label>
+      <select id="Modal__create-select-section" name="Section">
+        <optgroup label="Publicar en">
+          <option value="latest-news">Ultimas noticias</option>
+          <option value="main">Portada</option>
+          <option value="interesting">No te lo pierdas</option>
+        </optgroup>
+      </select>
+
+      <legend>Etiquetas</legend>
+      <label for="category">Seleccione una etiqueta</label>
+      <select id="Modal__create-select-category" name="category">
+        <optgroup label="etiqueta">
+          <option value="educacion">Educacion</option>
+          <option value="economia">Economia</option>
+          <option value="opinion">Opinion</option>
+          <option value="tecnologia">Tecnologia</option>
+          <option value="cultura">Cultura</option>
+          <option value="entretenimiento">Entretenimiento</option>
+          <option value="deportes">Deportes</option>
+          <option value="internacional">Internacional</option>
+          <option value="politica">Politica</option>
+          <option value="salud">Salud</option>
+        </optgroup>
+      </select>
+      <div id="Modal__create-publicar-button" class="modal__create-publicar-button">
+        Publicar Articulo
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+<!-- JS main files -->
+<script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
+<script type="text/javascript" src="js/article/article.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/article/articleController.js"></script>
+
 </html>
