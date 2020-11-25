@@ -23,6 +23,16 @@ a {
   text-decoration: none;
 }
 
+legend {
+  font-size: 1.5em;
+  color: var(--color-blue);
+  text-align: start;
+}
+
+select {
+  margin-bottom: 0.5em;
+}
+
 .wrapper-internal {
   padding: 5em 10%;
 }
@@ -119,6 +129,7 @@ align-self: start;
 .header__user-icon {
   width: 5em;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .header__bottom {
@@ -191,7 +202,7 @@ align-self: start;
 .section__latest-news-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   grid-gap: 2em;
 }
 
@@ -389,11 +400,84 @@ align-self: start;
   cursor: pointer;
 }
 
-legend {
-  font-size: 1.5em;
-  color: var(--color-blue);
+/* modal iniciar sesion */
+
+.modal__content-sesion {
+  background-color: var(--color-blue);
+  border-top: 1.4em solid var(--color-white);
+  border-bottom: 1.4em solid var(--color-white);
+  width: 50vw;
+  padding: 3rem;
+  text-align: center;
 }
 
-select {
-  margin-bottom: 0.5em;
+.modalSesion__logo{
+  font-size: 10em;
+  color: var(--color-white);
 }
+
+.modalSesion__title{
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.modalSesion__input{
+  padding: .5em;
+  margin: .2em 0;
+  background-color: lightgray;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.ModalSesion_btnInicioSesion{
+  display: block;
+  padding: .5em;
+  margin: .5em auto;
+  background-color: var(--color-orange);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.ModalSesion__btn-InicioSesionGoogle{
+  padding: .5em;
+  margin-bottom: 1em ;
+  font-family: var(--text-font);
+  background-color:#D50F25;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modalSesion__title2{
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+.ModalSesion__bnt-Registrarse{
+  padding: .5em;
+  margin-bottom: 1em ;
+  background-color: #000000;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* modal de registro */
+
+.modalRegistro__input{
+  padding: .5em;
+  margin: .2em 0;
+  background-color: lightgray;
+  font-weight: bold;
+  display: inline-block;
+  width: max-content;
+}
+
+.legendRegistro{
+  color: var(--color-white);
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+/* Publicar articulo vacío  */
+

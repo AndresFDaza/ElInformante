@@ -9,7 +9,7 @@
   <title>EL INFORMANTE</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet" />
-  <!-- <link rel="stylesheet" href="css/resset.css" /> -->
+  <link rel="stylesheet" href="css/resset.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -42,7 +42,9 @@
         </div>
         <div class="header__top-user flex-center">
           <img class="header__notification-icon" src="assets/icons/campana.svg" alt="" />
-          <img class="header__user-icon" src="assets/icons/user.svg" alt="" />
+          <a id="btnInicioSesion">
+            <img id="User" class="header__user-icon" src="assets/icons/user.svg" alt="" />
+          </a>
         </div>
       </div>
     </div>
@@ -101,60 +103,8 @@
     <section class="section__latest-news">
       <h2 class="section__title">Últimas noticias</h2>
       <div class="section__division"></div>
-      <div class="section__latest-news-container">
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            La historia de la brutal golpiza
-            al hijo de Sergio Araújo:
-          </h3>
-          <p class="article__intro-paragraph">
-            Estuvo 25 días incapacitado y tiene deformidades físicas.
-            Los señalados acaban de ser condenados.
-          </p>
-          <div class="article__button--light">LEER MÁS</div>
-        </article>
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            ‘¡La paz! Única pasión de Horacio
-            que supera la que tiene por Rosita’
-          </h3>
-          <p class="article__intro-paragraph">
-            El discurso del expresidente Ernesto Samper en homenaje a
-            Horacio Serpa Uribe.
-            Palabras pronunciadas por el expresidente Ernesto Samper en
-            noviembre de 2018 en homenaje al exministro Serpa Uribe,
-            quien murió el sábado
+      <div id="publicarLatestNews" class="section__latest-news-container">
 
-          </p>
-          <div class="article__button--light">LEER MÁS</div>
-        </article>
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            Esto hace Back Tap, el 'botón secreto'
-            que Apple agregó a los iPhone
-          </h3>
-          <p class="article__intro-paragraph">
-            ¿Tienes un modelo de iPhone 8 o más nuevo?
-            ¿Ya te diste cuenta del "botón secreto" que le agrega
-            funcionalidad a la parte posterior del dispositivo?
-            No te preocupes si no, pues no es visible y hay
-            que configurarlo.
-
-          </p>
-          <div class="article__button--light">LEER MÁS</div>
-        </article>
-        <article class="article__latest-news">
-          <h3 class="article__title--dark">
-            Vladimir Marín sufre terrible accidente:
-            pide ayuda para cirugía
-          </h3>
-          <p class="article__intro-paragraph">
-            Un delicado accidente automovilístico sufrió el exfutbolista
-            colombiano Vladimir Marín, quien tras salvarse de milagro,
-            sufrió terribles heridas en su cara y cuello.
-          </p>
-          <div class="article__button--light">LEER MÁS</div>
-        </article>
       </div>
     </section>
 
@@ -271,8 +221,60 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Modal de Inicio de Sesión -->
+  <div id="ModalSesion" class="modal">
+    <div class="modal__content-sesion">
+      <div class="modalSesion__logo">EI</div>
+      <h4 class="modalSesion__title">Iniciar Sesión</h4>
+
+
+      <input id="ModalSesion__correo-input" class="modalSesion__input" type="text" placeholder="Correo de usuario" />
+      <input id="ModalSesion__contrasena-input" class="modalSesion__input" type="password" placeholder="Contraseña" />
+
+      <button id="ModalSesion_btnInicioSesion" class="ModalSesion_btnInicioSesion">Iniciar Sesion</button>
+      <br>
+      <button id="ModalSesion__btn-InicioSesionGoogle" class="ModalSesion__btn-InicioSesionGoogle">Ingresar con
+        google</button>
+
+      <h5 class="modalSesion__title2">¿Aún no tienes cuenta?</h5>
+      <button id="btnRegistro" class="ModalSesion__bnt-Registrarse">Registrarse</button>
+
+    </div>
+  </div>
+
+  <!-- Modal de registro -->
+  <div id="ModalRegistro" class="modal">
+    <div class="modal__content-sesion">
+      <div class="modalSesion__logo">EI</div>
+      <h4 class="modalSesion__title">Registrarse</h4>
+
+      <legend class="legendRegistro">Ingrese su nombre:
+        <input id="ModalRegistro-input-nombre" class="modalRegistro__input" type="text" placeholder="Nombre"
+          maxlength="50" data-length="50" required />
+      </legend>
+      <legend class="legendRegistro">Ingrese su correo:
+        <input id="ModalRegistro-input-correo" class="modalRegistro__input" type="text" placeholder="Correo"
+          maxlength="50" data-length="50" required />
+      </legend>
+      <legend class="legendRegistro">Ingrese una contraseña:
+        <input id="ModalRegistro-input-contrasena" class="modalRegistro__input" type="password" placeholder="Contraseña"
+          maxlength="50" data-length="50" required />
+      </legend>
+      <button id="btnRegistrarDatos" class="ModalSesion__bnt-Registrarse" type="submit">Registrarse</button>
+
+      <h5 class="modalSesion__title2">O tambien puedes</h5>
+      <button id="ModalRegistro__btn-InicioSesionGoogle" class="ModalSesion__btn-InicioSesionGoogle">Ingresar con
+        google</button>
+
+
+    </div>
+  </div>
+
 </body>
 
+<!-- JQuery google api -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -280,11 +282,72 @@
 
 <!-- Add Firebase products that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
 
 <!-- JS main files -->
 <script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
+<script type="text/javascript" src="js/auth/autenticacion.js"></script>
 <script type="text/javascript" src="js/article/article.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/article/articleController.js"></script>
+<script type="text/javascript" src="js/auth/autenticacionController.js"></script>
+<script type="text/javascript" src="js/util/util.js"></script>
+
+
 
 </html>
+
+<!-- <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            La historia de la brutal golpiza
+            al hijo de Sergio Araújo:
+          </h3>
+          <p class="article__intro-paragraph">
+            Estuvo 25 días incapacitado y tiene deformidades físicas.
+            Los señalados acaban de ser condenados.
+          </p>
+          <div class="article__button--light">LEER MÁS</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            ‘¡La paz! Única pasión de Horacio
+            que supera la que tiene por Rosita’
+          </h3>
+          <p class="article__intro-paragraph">
+            El discurso del expresidente Ernesto Samper en homenaje a
+            Horacio Serpa Uribe.
+            Palabras pronunciadas por el expresidente Ernesto Samper en
+            noviembre de 2018 en homenaje al exministro Serpa Uribe,
+            quien murió el sábado
+
+          </p>
+          <div class="article__button--light">LEER MÁS</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Esto hace Back Tap, el 'botón secreto'
+            que Apple agregó a los iPhone
+          </h3>
+          <p class="article__intro-paragraph">
+            ¿Tienes un modelo de iPhone 8 o más nuevo?
+            ¿Ya te diste cuenta del "botón secreto" que le agrega
+            funcionalidad a la parte posterior del dispositivo?
+            No te preocupes si no, pues no es visible y hay
+            que configurarlo.
+
+          </p>
+          <div class="article__button--light">LEER MÁS</div>
+        </article>
+        <article class="article__latest-news">
+          <h3 class="article__title--dark">
+            Vladimir Marín sufre terrible accidente:
+            pide ayuda para cirugía
+          </h3>
+          <p class="article__intro-paragraph">
+            Un delicado accidente automovilístico sufrió el exfutbolista
+            colombiano Vladimir Marín, quien tras salvarse de milagro,
+            sufrió terribles heridas en su cara y cuello.
+          </p>
+          <div class="article__button--light">LEER MÁS</div>
+        </article> -->
