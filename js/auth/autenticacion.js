@@ -1,8 +1,6 @@
 class Autenticacion {
 
   autEmailPass(email, password) {
-    console.log(email);
-    console.log(password);
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)

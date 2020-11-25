@@ -17,7 +17,6 @@ $(() => {
     const vistaModal = document.getElementById("ModalCreate");
 
     const article = new Article();
-
     const uid = "admin";
     const emailUser = "developer@test.umng";
     const title = $("#Modal__create-title-input").val();

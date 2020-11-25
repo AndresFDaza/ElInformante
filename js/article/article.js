@@ -83,6 +83,15 @@ class Article {
           <p class="article__intro-paragraph">
             ${introduccion}
           </p>
+          <p class="article__intro-paragraph">
+            ${texto}
+          </p>
+          <span class="main__category">
+            ${etiqueta}
+          </span>
+          <span class="main__date">
+            ${autor}
+          </span>
           <div class="article__button--light">LEER MÁS</div>
         </article>
     `
