@@ -39,8 +39,32 @@ class Article {
       });
   }
 
+  subirImagenArticle(file, uid) {
+    const refStorage = firebase.refStorage.ref(`imgArticle/${uid}/${file.name}`)
+    const task = refStorage.put(file)
+
+    task.on('state_changed',
+      snapshot => {
+        const porcentaje = snapshot.bytesTransferred(snapshot.totalBytes * 100)
+      },
+      err => {
+        console.error(`Hubo un error subiendo el archivo (err:${err})`)
+      },
+      () => {
+        task.snapshot.ref.getDownloadURL()
+          .then(url => {
+            console.log(url)
+            sessionStorage.setItem("imgNewArticle", url)
+          }).catch(err => {
+            console.error(`No se ha logrado guardar el archivo en storage (err:${err})`)
+          })
+      }
+    )
+
+  }
+
   consultarArticulos() {
-    this.db.collection("articles").onSnapshot((querySnapshot) => {
+    this.db.collection("articles").orderBy('fecha', 'desc').onSnapshot((querySnapshot) => {
       $("#publicarLatestNews").empty();
       if (querySnapshot.empty) {
         $("#publicarLatestNews").append(this.obtenerTemplateArticleVacio());

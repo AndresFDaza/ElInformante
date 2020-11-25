@@ -48,4 +48,13 @@ $(() => {
         vistaModal.classList.remove("modal--mostrar");
       });
   });
+
+  //subir imagen
+  $('#UploadImage').on('change', e => {
+    const file = e.target.files[0]
+    const article = new Article()
+    article.subirImagenArticle(file)
+  })
+
+
 });
